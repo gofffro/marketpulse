@@ -60,8 +60,12 @@ Finnhub API может быть недоступен без VPN у некото�
 ### Избранное
 <img width="380" height="688" src="https://github.com/user-attachments/assets/ed12ba45-0790-4219-8959-b08a516647a6" />
 
-### Настройки
+### Оффлайн-режим
 <img width="389" height="695" src="https://github.com/user-attachments/assets/da6b5401-2497-4f14-9097-0ef3858f0b3a" />
+
+### Настройки фиата
+<img width="380" height="678" alt="image" src="https://github.com/user-attachments/assets/56611160-8609-4642-8c5d-47aca1f50ed7" />
+
 
 ---
 
