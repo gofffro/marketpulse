@@ -42,7 +42,6 @@ class DetailViewModel(
         viewModelScope.launch {
             _state.update { it.copy(isLoading = true, error = null) }
             runCatching {
-                // упрощение: обновляем избранное целиком (чтобы кэш консистентный)
                 if (!_state.value.isFavorite) {
                     repo.toggleFavorite(Asset(symbol, symbol, type))
                 }

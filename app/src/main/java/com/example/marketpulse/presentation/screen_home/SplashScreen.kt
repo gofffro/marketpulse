@@ -10,7 +10,6 @@ fun SplashScreen(
     onGoHome: () -> Unit
 ) {
     LaunchedEffect(Unit) {
-        // простая “инициализация”
         onGoHome()
     }
 }

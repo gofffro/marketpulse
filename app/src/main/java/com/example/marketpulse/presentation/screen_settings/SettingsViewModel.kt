@@ -28,8 +28,6 @@ class SettingsViewModel(
     fun setAuto(v: Boolean) = viewModelScope.launch { settings.setAutoRefresh(v) }
 
     fun clearCache() = viewModelScope.launch {
-        // простой способ “инвалидации”: refreshAll(force=true) перезапишет, но очистку БД сделаем на стороне DAO
-        // (если хочешь прям очистку — добавь методы clear() в репозитории и дерни dao.clear())
         repo.refreshAll(force = true)
     }
 }

@@ -162,7 +162,6 @@ class MarketRepositoryImpl(
             val symbol = it.symbol?.trim().orEmpty()
             val name = it.description?.trim().orEmpty()
             if (symbol.isBlank()) return@mapNotNull null
-            // Упрощённая классификация: крипту добавим вручную списком на Home; поиск — стоки.
             Asset(symbol = symbol, name = if (name.isBlank()) symbol else name, type = AssetType.STOCK)
         }
     }

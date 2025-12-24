@@ -17,7 +17,6 @@ class HomeViewModel(
     private val _state = MutableStateFlow(HomeUiState())
     val state: StateFlow<HomeUiState> = _state.asStateFlow()
 
-    // Упрощённый список крипты “популярное”
     private val defaultCrypto = listOf(
         Asset("BINANCE:BTCUSDT", "Bitcoin / USDT", AssetType.CRYPTO),
         Asset("BINANCE:ETHUSDT", "Ethereum / USDT", AssetType.CRYPTO)
@@ -73,7 +72,6 @@ class HomeViewModel(
 
     fun ensureDefaultCryptoInFavorites() {
         viewModelScope.launch {
-            // Добавим крипту в избранное при первом запуске, если пусто
             val currentFav = repo.observeFavorites().first()
             if (currentFav.isEmpty()) {
                 defaultCrypto.forEach { repo.toggleFavorite(it) }

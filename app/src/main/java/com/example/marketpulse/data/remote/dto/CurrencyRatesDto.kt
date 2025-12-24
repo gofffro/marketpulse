@@ -12,5 +12,4 @@ data class CurrencyRatesDto(
     @Json(name = "usd") val usd: Map<String, Double>?,
     @Json(name = "rub") val rub: Map<String, Double>?,
     @Json(name = "jpy") val jpy: Map<String, Double>?
-    // Мы будем парсить динамически через Map-ответ, поэтому ниже сделаем второй интерфейс.
 )

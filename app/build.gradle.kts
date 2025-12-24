@@ -23,7 +23,7 @@ android {
         buildConfigField(
             "String",
             "FINNHUB_TOKEN",
-            "\"\""
+            "\"d55orh9r01qu4cci5ko0d55orh9r01qu4cci5kog\""
         )
     }
 
